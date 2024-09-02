@@ -13,10 +13,13 @@ public class Book {
     }
 
 
+    public String toString(){
+        return "The author is "+author+" and the title is "+title+ " and the year is "+year;
+    }
 
     public static void main(String[] args) {
         Book book = new Book("Something", "Someone", 1000);
-        System.out.println(book.author + " "+book.title+ " "+book.year);
+        System.out.println(book);
     }
 
 }
