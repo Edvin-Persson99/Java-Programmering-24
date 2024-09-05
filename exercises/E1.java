@@ -1,10 +1,14 @@
 public class E1 {
 
     public static void main(String[] args) {
-        Integer myAge = 25;
-        String myFirstName = "Edvin";
+        
+        String firstName = "Edvin";
 
-        System.out.println("My name is "+myFirstName+" and my age is "+myAge);
+        String lastName = "Persson";
+
+        String name = firstName + lastName;
+
+        System.out.println("The length of my firstName and lastName is "+name.length());
         
     }
 
