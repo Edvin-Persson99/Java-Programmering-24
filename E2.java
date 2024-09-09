@@ -3,12 +3,14 @@ public class E2 {
     public static void main(String[] args) {
    
      
-       int result = 140;
+        int result = 0;
+        for (int x = 1, y = 10; x < 5; x++, y--){
 
-       for(int i = 20; i > 15; i--){
-        result = result - i;
-        System.out.println(result);
-       }System.out.println(result);
+            result = result + x * y;
+            System.out.println(result);
+
+        }
+         
 
 
     }
