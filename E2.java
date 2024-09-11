@@ -4,14 +4,13 @@ public class E2 {
    
      
         int result = 0;
-        for (int x = 1, y = 10; x < 5; x++, y--){
-
-            result = result + x * y;
+        while (result <= 100){
+            result = result + 16;
             System.out.println(result);
-
         }
+            
          
-
+        
 
     }
 
