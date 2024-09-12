@@ -2,27 +2,14 @@ public class E2 {
 
     public static void main(String[] args) {
 
-      
-
-        
-   
-     for(int i = 1,counter = 0, sum = 0; i < 100; i++){
-
-
-        if (counter == 10) {
-            System.out.println(sum);
-            break;
-            
+        int result = 0;
+        for (int i = 2; i <= 7; i++) {
+            result = result + i;
+            // result = 2, 5, 9, 14, 20, 27 
+            // i = 2, 3, 4, 5, 6, 7
         }
 
-        if (i % 2 != 0) {
-            sum+=i;
-            counter++;
-            System.out.println(sum);
-        }
-
-     }
-
+        System.out.println(result);
 
 
     }
