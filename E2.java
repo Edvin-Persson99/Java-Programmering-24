@@ -3,13 +3,16 @@ public class E2 {
     public static void main(String[] args) {
    
      
-        int result = 0, a = 0;
-        while (result <= 100 & a <= 10) {
-            result = result + a;
-            // 0, 3, 9, 18
-            a = a + 3;
-            // a = 3, 6, 9 
+        int result = 0;
+        for (int i = 0; i <= 10; i++) {
+            if (i % 2 != 0)
+                continue;
+            result = result + i;
             System.out.println(result);
+            //result = 0, 2, 6, 12, 20, 30
+
+            
+        
         }
             
          
