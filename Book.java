@@ -4,11 +4,9 @@ public class Book {
     private String author;
     private int year;
 
-    public Book(String title, String author, int year){
+    public Book(){
 
-        this.title = title;
-        this.author = author;
-        this.year = year;
+       
 
     }
 
@@ -18,8 +16,10 @@ public class Book {
     }
 
     public static void main(String[] args) {
-        Book book = new Book("Something", "Someone", 1000);
-        System.out.println(book);
+        Book book1 = new Book();
+        book1.author = "Leif Gw persson";
+        book1.title = "Den som dödar draken";
+        book1.year  = 2008;
     }
 
 }
