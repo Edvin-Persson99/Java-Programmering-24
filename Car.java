@@ -24,8 +24,17 @@ public class Car {
         return "The make is "+make+" and the model is "+model+" and this car is from "+year+ " and the color is "+color;
     }
 
-    Car car1 = new Car("Volvo","V70", 2010, "black");
+    
 
-    Car car2 = new Car("Volvo", "V70");
+    public static void main(String[] args){
+        Car car1 = new Car("Volvo", "V70", 2012, "black");
+
+        Car car2 = new Car("Volvo", "V70");
+
+        System.out.println(car1);
+
+        System.out.println(car2);
+
+    }
 
 }
