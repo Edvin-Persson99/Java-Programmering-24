@@ -26,6 +26,8 @@ public class Executor {
         allosaurus.species = "allosaurus";
         allosaurus.age = 10;
         allosaurus.skullLenght = 90.0;
+
+        Theropod theropod = container.trex;
     }
 
 }
