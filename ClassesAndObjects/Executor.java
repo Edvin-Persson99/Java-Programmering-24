@@ -3,14 +3,14 @@ package ClassesAndObjects;
 public class Executor {
     public static void main(String[] args) {
         Container container = new Container();
-        container.albertosaurus.species = "albertosaurus";
-        container.albertosaurus.age = 30;
-        container.albertosaurus.skullLenght = 120.0;
+        container.albertosaurus.species = "albertosaurus something";
+        container.albertosaurus.age = 40;
+        container.albertosaurus.skullLenght = 121.0;
 
 
-        container.trex.species = "Tyrannosaurus rex";
-        container.trex.age = 20;
-        container.trex.skullLenght = 200.4;
+        container.trex.species = "Tyrannosaurus rex something";
+        container.trex.age = 19;
+        container.trex.skullLenght = 210.4;
 
 
         System.out.println(container.albertosaurus.species);
