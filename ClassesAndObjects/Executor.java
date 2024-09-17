@@ -11,6 +11,15 @@ public class Executor {
         container.trex.species = "Tyrannosaurus rex";
         container.trex.age = 20;
         container.trex.skullLenght = 200.4;
+
+
+        System.out.println(container.albertosaurus.species);
+        System.out.println(container.albertosaurus.age);
+        System.out.println(container.albertosaurus.skullLenght);
+
+        System.out.println(container.trex.species);
+        System.out.println(container.trex.age);
+        System.out.println(container.trex.skullLenght);
     }
 
 }
