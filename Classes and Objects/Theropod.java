@@ -6,10 +6,6 @@ public class Theropod {
         int age;
         double skullLength;
 
-        public static void main(String[] args) {
-
         
-
-    }
 
 }
