@@ -20,6 +20,12 @@ public class Executor {
         System.out.println(container.trex.species);
         System.out.println(container.trex.age);
         System.out.println(container.trex.skullLenght);
+
+        Theropod allosaurus = new Theropod();
+
+        allosaurus.species = "allosaurus";
+        allosaurus.age = 10;
+        allosaurus.skullLenght = 90.0;
     }
 
 }
