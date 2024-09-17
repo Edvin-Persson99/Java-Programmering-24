@@ -28,6 +28,12 @@ public class Executor {
         allosaurus.skullLenght = 90.0;
 
         Theropod theropod = container.trex;
+
+        System.out.println(container.trex);
+        System.out.println(container.albertosaurus);
+
+        System.out.println(allosaurus);
+        System.out.println(theropod);
     }
 
 }
