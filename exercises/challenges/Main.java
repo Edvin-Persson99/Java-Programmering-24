@@ -1,4 +1,4 @@
-package exercises.challenges;
+package challenges;
 import java.util.Scanner;
 public class Main {
 
