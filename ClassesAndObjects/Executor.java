@@ -24,8 +24,9 @@ public class Executor {
         System.out.println(allosaurus);
         System.out.println(theropod);
         System.out.println(container.trex.walksWithTheirLegsUnderTheirBody);
-        container.trex.changeToHungry(container.trex);
+        Dinosaur.changeToHungry(container.trex);
         System.out.println(container.trex.isHungry);
     }
+
 
 }

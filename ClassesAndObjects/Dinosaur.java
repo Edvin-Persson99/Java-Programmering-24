@@ -8,8 +8,8 @@ public class Dinosaur {
         System.out.println("The dinosaur is walking");
     }
 
-    public void changeToHungry(Dinosaur dinosaur){
-        this.isHungry = true;
+    public static void changeToHungry(Dinosaur dinosaur){
+        dinosaur.isHungry = true;
     }
 }
 
