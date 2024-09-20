@@ -1,6 +1,6 @@
 package ClassesAndObjects;
 
-public class Theropod {
+public class Theropod extends Dinosaur {
 
     String species;
     int age;
