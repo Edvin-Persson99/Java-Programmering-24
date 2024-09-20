@@ -8,8 +8,10 @@ public class Main {
         
         try {
             int number = scanner.nextInt();
-            for(int i = 1; i <= 10; i++){
-                System.out.println(number * i);
+            for(int i = 0; i <= number; i++){
+                for(int j = 0; j <= i; j++){
+                   
+                }
             }
         } catch (Exception e) {
             System.out.println("Your input has the be a number");
