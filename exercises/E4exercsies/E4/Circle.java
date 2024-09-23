@@ -1,13 +1,12 @@
 package exercises.E4exercsies.E4;
-import java.math.*;
 public class Circle {
 
     private double radius;
     private double diameter;
 
-    public Circle(double radius, double diamter) {
+    public Circle(double radius) {
         this.radius = radius;
-        this.diameter = diamter;
+        this.diameter = radius*2;
     }
 
     public double calculateCircumference(){
