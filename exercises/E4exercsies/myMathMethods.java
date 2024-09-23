@@ -25,11 +25,11 @@ public class myMathMethods {
         for (int i = 0; i < number; i++) {
             // Print the number
             System.out.print(num1 + " ");
-
+            //0, 1, 1
             // Swap
-            int num3 = num2 + num1;
-            num1 = num2;
-            num2 = num3;
+            int num3 = num2 + num1;// 1, 1, 2  
+            num1 = num2; // 1, 1
+            num2 = num3;// 1, 1
         }
         
     }
