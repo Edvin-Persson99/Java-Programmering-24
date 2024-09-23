@@ -4,6 +4,11 @@ public class Rectangle {
     private double length;
     private double width;
 
+    public Rectangle(double width, double length){
+        this.length = length;
+        this.width = width;
+    }
+
     public double calculateArea(double width, double length){
         return this.width * this.length;
     }
