@@ -3,35 +3,76 @@ package exercises.E4exercsies;
 public class myMathMethods {
 
     public static void main(String[] args) {
-        calculateFactorial(5);
-        calculateFibonacci(4);
+        System.out.println(calculateFactorial(5));
+        System.out.println(calculateFibonacci(4));
+        System.out.println(primeChecker(8));
+      
     }
 
-    static void calculateFactorial(int number){
+    static int calculateFactorial(int number){
 
         
 
-        int i, fact = 1;
-        for(i = 1; i <= number; i++){
-            fact = fact*i;
+        int factorial = 1;
+
+        if (number < 0) {
+            System.out.println("Error: factorial is undefined for negative integers");
+            return 0;
         }
-        System.out.println("Factorial of " + number + " is: " + fact);
+
+        if (number == 0) {
+            factorial = 1;
+            return factorial;
+        }
+
+        for (int i = 1; i <= number; i++) {
+            // i = 1, 2, 3, 4, 5
+            factorial = factorial * i; // 1, 2, 6, 24
+        }
+
+        return factorial;
     }
 
-    static void calculateFibonacci(int number){
+    static int calculateFibonacci(int number){
 
-        int num1 = 0, num2 = 1;
-
-        for (int i = 0; i < number; i++) {
-            // Print the number
-            System.out.print(num1 + " ");
-            //0, 1, 1
-            // Swap
-            int num3 = num2 + num1;// 1, 1, 2  
-            num1 = num2; // 1, 1
-            num2 = num3;// 1, 1
+        if (number <= 0) {
+            throw new IllegalArgumentException("Position must be a positive integer.");
         }
-        
+
+        if (number == 1 || number == 2) {
+            return number - 1;
+        }
+
+        int previous = 0;
+        int current = 1;
+        int fibonacci = 0;
+
+        for (int i = 3; i <= number; i++) {
+            fibonacci = previous + current; // 1  2
+            previous = current; // 1 1
+            current = fibonacci; // 1 1
+        }
+
+        return fibonacci;
     }
 
+     static boolean primeChecker(int number) {
+        boolean isPrime = true;
+
+        if (number == 1) {
+            return false;
+        }
+
+        for (int i = 2; i <= number - 1; i++)
+            if (number % i == 0) {
+                isPrime = false;
+            }
+        return isPrime;
+    }
+
+    
+    
 }
+    
+
+
